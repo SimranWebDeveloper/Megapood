@@ -1,0 +1,53 @@
+nav{
+
+    border-bottom: .5px solid rgb(131, 131, 131);
+
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
+    background-color: #000000 ;
+
+}
+.dropdown-item{
+    transition: 0.5s;
+    &:hover{
+        background-color: red;
+    }
+
+}
+
+nav{
+   .container-fluid{
+        .collapse{
+            .navbar-nav{
+                width: 50%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .nav-item{
+                    position: relative;
+                    a{
+                        color: white;
+                        font-weight: 500;
+                        padding:1rem;
+                        // background: #3ce00a;
+                    }
+                    &::after{
+                        position: absolute;
+                        display: block;
+                        content: "";
+                        width: 0%;
+                        height: 3px;
+                        background-color: red;
+                        transition: 500ms;
+                    }
+                    &:hover::after{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+   } 
+}
